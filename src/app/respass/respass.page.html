@@ -1,0 +1,25 @@
+<ion-header [translucent]="true" class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-title><h1>Restablecer Contraseña</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingrese su Usuario para recuperar su Contraseña</ion-card-title>
+    </ion-card-header>
+      <ion-item>
+        <ion-input label="Usuario" labelPlacement="floating">
+        </ion-input>
+      </ion-item>
+      <ion-button fill="clear" (click)="recuperar()" #btnrecuperar>
+        Recuperar</ion-button>
+      <ion-title></ion-title>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title size="small">Te LLevo APP <ion-icon name="car-sport-outline"></ion-icon> </ion-title>
+  </ion-toolbar>
+</ion-footer>

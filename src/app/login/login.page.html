@@ -1,0 +1,28 @@
+<ion-header class="ion-text-center ion-no-border header-title">
+      <h1>Te LLevo APP</h1>
+      <ion-icon name="car-sport-outline"></ion-icon>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header class="ion-text-center ion-no-border">
+    <br> <br>
+  </ion-header>
+    <ion-toolbar >
+      <ion-item>
+        <ion-input [(ngModel)]="username" 
+        label="Usuario" labelPlacement="floating">
+      </ion-input>
+      </ion-item>
+    </ion-toolbar>
+    <ion-item>
+      <ion-input [(ngModel)]="password" label="Contraseña" labelPlacement="floating" 
+      type="password">
+    </ion-input>
+    </ion-item>
+    <ion-button expand="block" fill="outline"
+    (click)="validateLogin()" #btnLogin>
+    Ingresar</ion-button>
+    <div class="ion-text-center">
+      <ion-button fill="clear" (click)="ressPass()" #btnressPass>
+        Restablecer Contraseña</ion-button>
+    </div>
+</ion-content>
